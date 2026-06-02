@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Flatway | Guides et conseils immobiliers</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Blog Flatway : guides experts, checklists, modèles et stratégies pour optimiser vos annonces immobilières (SEO, photos, descriptions, mentions légales, marketing). Vendez plus vite et mieux." />
+  <link rel="canonical" href="https://flatway.fr/blog" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Blog Flatway | Guides et conseils immobiliers" />
+  <meta property="og:description" content="SEO immobilier, photos, descriptions, mentions légales, marketing et gestion des leads. Tout ce qu’il faut pour optimiser vos annonces et vendre plus vite." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flatway.fr/blog" />
+  <meta property="og:image" content="https://flatway.fr/static/images/og-flatway-blog.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog Flatway | Centre de ressources immobilier" />
+  <meta name="twitter:description" content="Guides pratiques pour optimiser vos annonces : SEO, photos, descriptions, conformité, marketing, leads." />
+  <meta name="twitter:image" content="https://flatway.fr/static/images/og-flatway-blog.jpg" />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+ <!-- JSON-LD Schema.org (Blog) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Flatway — Blog Immobilier",
+  "url": "https://flatway.fr/blog",
+  "description": "Guides experts pour optimiser vos annonces immobilières : SEO, photos, rédaction, mentions légales et marketing.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Flatway",
+    "url": "https://flatway.fr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://flatway.fr/_next/static/media/appIcon.4beb43c9.webp",
+      "width": 128,
+      "height": 128
+    }
+  }
+}
+</script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+
+<body class="bg-[#faf7f5] text-[#1a1a1a]">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-30 bg-white border-b border-black/5">
+    <div class="max-w-[1240px] mx-auto px-5 py-[14px] flex items-center justify-between gap-5">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-[#7A1E1E] flex items-center justify-center text-white font-bold text-[20px]">
+          F
+        </div>
+        <div class="font-bold text-[18px] tracking-[0.02em] text-[#111111]">
+          Flatway
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex items-center gap-[26px] text-[15px]" aria-label="Navigation principale">
+        <a href="estimer" class="text-[#333333] font-medium hover:underline">Estimer</a>
+        <a href="acheter" class="text-[#333333] font-medium hover:underline">Acheter</a>
+        <a href="vendre" class="text-[#333333] font-medium hover:underline">Vendre</a>
+        <a href="blog"
+           class="relative text-[#7A1E1E] font-medium after:content-[''] after:absolute after:left-0 after:-bottom-[6px] after:h-[2px] after:w-full after:rounded-full after:bg-[#7A1E1E]">
+          Blog
+        </a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="flex items-center gap-3 text-[14px]">
+        <button type="button"
+                class="rounded-full border border-[#dddddd] px-4 py-[7px] bg-white cursor-pointer text-sm">
+          Vous êtes professionnel ?
+        </button>
+        <button type="button"
+                class="rounded-full border-none px-[18px] py-2 bg-[#7A1E1E] text-white cursor-pointer text-sm shadow-[0_4px_12px_rgba(122,30,30,0.35)] hover:bg-[#5c1616]">
+          Découvrir Flatway
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative text-white overflow-hidden"
+    style="background: radial-gradient(circle at top left, #a23a3a 0, #7A1E1E 40%, #4a1111 90%); padding: 60px 20px 70px;">
+    <div class="pointer-events-none absolute inset-0 opacity-[0.16] mix-blend-soft-light bg-cover bg-center"
+      style="background-image: url('https://flatway.fr/static/images/hero-overlay.jpg');"></div>
+
+    <div class="relative max-w-[1240px] mx-auto grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start z-[1] px-0">
+
+      <!-- Colonne gauche -->
+      <div class="px-2">
+        <div class="inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/10 border border-white/20 text-[12px] uppercase tracking-[0.12em] mb-3">
+          <span>Blog Flatway</span>
+          <span>Guides & ressources</span>
+        </div>
+
+        <h1 class="text-[40px] leading-[1.15] font-bold mb-4">
+          Flatway, l’immobilier revisité pour les particuliers et les pros.
+        </h1>
+
+        <p class="text-[17px] max-w-[620px] opacity-90 mb-[22px]">
+          Un blog conçu pour vous guider dans tous vos projets immobiliers : compréhension du marché, stratégies d’achat ou de vente, optimisation d’annonces, financement, rénovation, IA, gestion locative et préparation d’un déménagement.
+          <br>Des ressources simples et actionnables pour particuliers, investisseurs et professionnels.
+        </p>
+      </div>
+
+      <!-- Colonne droite -->
+      <div class="px-2">
+        <div class="bg-white text-[#1a1a1a] p-6 rounded-[14px] shadow-[0_10px_25px_rgba(0,0,0,0.15)] max-w-[420px]">
+          <h2 class="text-[20px] font-semibold mb-2">Votre projet immobilier commence ici.</h2>
+          <p class="text-[15px] leading-[1.6] mb-4">
+            Que vous recherchiez des méthodes concrètes, des outils pratiques ou des conseils d’experts, ce blog vous accompagne à chaque étape de votre parcours immobilier.
+            Découvrez des guides structurés, des checklists utiles et des contenus pensés pour vous aider à prendre les meilleures décisions, quel que soit votre objectif.
+          </p>
+          <div class="text-[13px] opacity-80">
+            Guides, outils, checklists et analyses immobilières
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTENU -->
+  <main class="w-[92%] max-w-[1240px] mx-auto pt-10 pb-[70px]">
+
+    <!-- Intro -->
+    <section class="max-w-[800px] mx-auto mb-[60px] text-center">
+      <h2 class="text-[26px] text-[#2b1b1b] mb-[10px] font-bold">
+        Votre centre de ressources pour réussir tous vos projets immobiliers
+      </h2>
+      <p class="text-[16px] opacity-90 leading-[1.7]">
+        Découvrez des guides complets, pratiques et accessibles, pensés pour les particuliers, les agences et les professionnels.<br />
+        Achat, location, vente, estimation, financement, rénovation, déménagement, immobilier d’entreprise ou nouvelles technologies : chaque article vous apporte des conseils concrets.
+      </p>
+    </section>
+
+    <!-- STYLES DES CARDS -->
+    <style>
+      .article-card { background:white; border-radius:18px; overflow:hidden; border:1px solid rgba(0,0,0,0.05); box-shadow:0 8px 18px rgba(0,0,0,0.05); transition:.25s; }
+      .article-card:hover { transform:translateY(-4px); box-shadow:0 14px 30px rgba(0,0,0,0.08); }
+      .article-img { width:100%; height:190px; object-fit:cover; }
+      .cat { font-size:12px; text-transform:uppercase; letter-spacing:0.12em; color:#7A1E1E; font-weight:600; margin-bottom:4px; display:block; }
+      .article-title { font-size:18px; font-weight:600; color:#2b1b1b; margin-bottom:6px; }
+      .article-text { font-size:14px; opacity:0.85; line-height:1.55; }
+    </style>
+
+
+   <!-- ===================================================== -->
+    <!-- =============== 0. ESTIMER =========================== -->
+    <!-- ===================================================== -->
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Estimer</h2>
+    <a href="Acheter.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Article 1 -->
+    <a href="Estimer1.html" class="article-card block">
+  <img src="https://media.istockphoto.com/photos/modern-white-house-with-garage-picture-id913010312?k=20&m=913010312&s=170667a&w=0&h=uIBZQ-bjuBpSDcT-qqN5MXYy0PfDBXAmkolkc0tZiuQ=" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Estimer</span>
+    <h3 class="article-title">Comment estimer la valeur de votre maison ou appartement ?
+</h3>
+    <p class="article-text">Comprendre les méthodes utilisées pour évaluer un bien immobilier et les critères qui influencent réellement sa valeur.</p>
+  </div>
+</a>
+
+    <!-- Article 2 -->
+
+    
+    <a href="/blog/Estimer2.html" class="article-card block">
+  <img src="https://media.istockphoto.com/id/1265019602/vector/growth-and-moving-down-arrows.jpg?s=612x612&w=0&k=20&c=5biVAQslUKIs572rXaADyReQD6wzOjOWly5IFvm7nrU=" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Estimer</span>
+    <h3 class="article-title">Qu’est-ce qui fait varier le prix d’un bien immobilier ?
+</h3>
+    <p class="article-text">Comprendre les méthodes utilisées pour évaluer un bien immobilier et les critères qui influencent réellement sa valeur.</p>
+  </div>
+</a>
+
+    <!-- Article 3 -->
+    
+     <a href="Estimer3.html" class="article-card block">
+  <img src="https://media.istockphoto.com/id/1448492111/id/vektor/meter-persegi-ukuran-permukaan-ikon-m2-mengukur-tanda-dimensi-area-ukur-tempat-dengan-panah.jpg?s=170667a&w=0&k=20&c=iZdxaTK-CW5no4q1SEuFH56Q2LfxifEQGkeqK8aKEWw=" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Estimer</span>
+    <h3 class="article-title">Prix au m² : comment le calculer et comment l’interpréter ?
+</h3>
+    <p class="article-text">Comprendre les méthodes utilisées pour évaluer un bien immobilier et les critères qui influencent réellement sa valeur.</p>
+  </div>
+</a>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- ===================================================== -->
+    <!-- =============== 1. ACHETER =========================== -->
+    <!-- ===================================================== -->
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Acheter</h2>
+    <a href="Acheter.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Article 1 -->
+    <a href="Acheter1.html" class="article-card block">
+  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Acheter</span>
+    <h3 class="article-title">Comment savoir si le moment est favorable pour acheter un bien immobilier ?</h3>
+    <p class="article-text">Analyse des prix, des taux, du marché et des tendances pour déterminer si 2025 est une année favorable à l’achat.</p>
+  </div>
+</a>
+
+    <!-- Article 2 -->
+
+    
+    <a href="Acheter2.html" class="article-card block">
+  <img src="https://tse3.mm.bing.net/th/id/OIP.VorYSOARbrP7S3sK5J5ToAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Acheter</span>
+    <h3 class="article-title">Les villes françaises qui attirent le plus les acheteurs</h3>
+    <p class="article-text">Les villes les plus attractives en 2025 selon les prix, l’emploi, la rentabilité et la demande locative.</p>
+  </div>
+</a>
+
+    <!-- Article 3 -->
+    
+     <a href="Acheter3.html" class="article-card block">
+  <img src="https://media.istockphoto.com/id/619519006/fr/photo/paris-tour-eiffel-france.jpg?s=612x612&w=0&k=20&c=QbJfflT8yRaV27194vFE1FfkTN0p2xcsGl2pC-aTq04=" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Acheter</span>
+    <h3 class="article-title">Comment repérer un quartier qui va prendre de la valeur ?</h3>
+    <p class="article-text">Les indicateurs clés : urbanisme, commerces, transports, tendances démographiques et signaux précoces de valorisation.</p>
+  </div>
+</a>
+    </div>
+</section>
+<!-- ===================================================== -->
+<!-- =============== 2. LOUER ============================= -->
+<!-- ===================================================== -->
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Louer</h2>
+    <a href="Louer.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    
+
+      <!-- Article 1 -->
+    <a href="Louer1.html" class="article-card block">
+  <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200&q=80" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Louer</span>
+    <h3 class="article-title">Comment trouver un logement à louer rapidement ?</h3>
+    <p class="article-text">Méthodes efficaces, plateformes à privilégier, astuces pour multiplier les réponses et éviter les refus.</p>
+  </div>
+</a>
+    <!-- Article 2 -->
+        <a href="Louer2.html" class="article-card block">
+    <img src="https://cdn.test.de/file/image/39/11/aa3e37dc-b1dc-4eb2-af97-3b6ea64dcc29-web/5773428_Sterbegeldversicherung-Vertraege-5098162;w600.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+    <div class="p-4">
+      <span class="cat">Louer</span>
+      <h3 class="article-title">Dossier de location : comment être accepté du premier coup ?</h3>
+      <p class="article-text">Méthodes rapides, documents essentiels, erreurs à éviter et arguments efficaces pour maximiser vos chances d’être sélectionné dès le premier envoi.</p>
+    </div>
+  </a>
+    <!-- Article 3 -->
+       <a href="Louer3.html" class="article-card block">
+    <img src="https://affluences.com/blog/wp-content/uploads/2021/03/logement-etudiant-photo-couverture-2048x1365.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+    <div class="p-4">
+        <span class="cat">Louer</span>
+        <h3 class="article-title">Comment trouver un logement étudiant ?</h3>
+        <p class="article-text">Astuces pour se démarquer, calendrier idéal et conseils pour éviter la concurrence et décrocher un logement plus vite.</p>
+      </div>
+  </a>
+    </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- =============== 3. VENDRE ============================ -->
+<!-- ===================================================== -->
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Vendre</h2>
+    <a href="Vendre.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+  <!-- ARTICLE 1 : SEO annonces -->
+
+<a href="Vendre1.html" class="article-card block">
+    <img src="https://img.graphicsurf.com/2019/12/SEO-vector-free-illustration2.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+    <div class="p-4">
+        <span class="cat">Vendre</span>
+        <h3 class="article-title">Comment améliorer le référencement d’une annonce immobilière</h3>
+        <p class="article-text">La méthode complète pour générer plus de visites qualifiées grâce au référencement immobilier.</p>
+      </div>
+  </a>
+    <!-- ARTICLE 2 : Booster visibilité -->
+
+
+
+<a href="Vendre2.html" class="article-card block">
+    <img src="https://www.facefull-news.com/wp-content/uploads/340-52120902ce531-2048x1545.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+    <div class="p-4">
+        <span class="cat">Vendre</span>
+        <h3 class="article-title">Les leviers qui améliorent la visibilité d’une annonce immobilière</h3>
+        <p class="article-text">CTR, rafraîchissement, réseaux sociaux, IA : toutes les stratégies utilisées par les meilleurs vendeurs.</p>
+      </div>
+  </a>
+    <!-- ARTICLE 3 : erreurs -->
+
+
+<a href="Vendre3.html" class="article-card block">
+    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+    <div class="p-4">
+        <span class="cat">Vendre</span>
+        <h3 class="article-title">Les erreurs qui réduisent le nombre de contacts sur une annonce immobilière</h3>
+        <p class="article-text">Les pièges courants et comment les corriger pour maximiser l’intérêt des acheteurs.</p>
+      </div>
+  </a>
+    </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- =============== 5. FINANCEMENT ====================== -->
+<!-- ===================================================== -->
+
+
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Financement</h2>
+    <a href="/blog/PrincipalFinancement.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+<!-- ARTICLE 1 -->
+      <a href="Financement1.html" class="article-card block">
+  <img src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=1200&q=80" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Financement</span>
+    <h3 class="article-title">Comment obtenir un prêt immobilier : conditions et critères examinés par les banques</h3>
+    <p class="article-text">Évolution des taux, impact sur le pouvoir d’achat et stratégies pour décrocher le meilleur prêt.</p>
+  </div>
+</a>
+    <!-- ARTICLE 2 -->
+
+<a href="Financement2.html" class="article-card block">
+  <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=1200&q=80" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Financement</span>
+    <h3 class="article-title">Comment renforcer son dossier pour obtenir un prêt immobilier ?</h3>
+    <p class="article-text">Les critères clés : taux d’endettement, apport, stabilité, scoring bancaire et optimisation express.</p>
+  </div>
+</a>
+    <!-- ARTICLE 3 -->
+
+<a href="Financement3.html" class="article-card block">
+  <img src="https://cdn.pixabay.com/photo/2017/03/27/21/31/money-2180330_640.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Financement</span>
+    <h3 class="article-title">Quelle durée de crédit choisir : 15, 20 ou 25 ans ?</h3>
+    <p class="article-text">Comparatif complet des mensualités, du coût total et du risque financier selon chaque durée.</p>
+  </div>
+</a>
+    </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- =============== 6. RÉNOVATION ======================== -->
+<!-- ===================================================== -->
+
+
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Rénovation</h2>
+    <a href="Rénovation.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+<!-- ARTICLE 1 -->
+
+<a href="Rénovation1.html" class="article-card block">
+  <img src="https://hmd-solution.fr/wp-content/uploads/2022/09/audit-energetique-entreprise.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Rénovation</span>
+    <h3 class="article-title">Audit énergétique obligatoire : qui est concerné et combien ça coûte ?</h3>
+    <p class="article-text">Le point complet sur l’obligation 2025 : seuils F et G, sanctions, prix, contenu et prestataires.</p>
+  </div>
+</a>
+    <!-- ARTICLE 2 -->
+
+
+<a href="Rénovation2.html" class="article-card block">
+  <img src="https://media.istockphoto.com/id/991867390/fr/photo/cette-chose-est-pr%C3%A9vue-sur-notre-plan-de-logement.jpg?s=612x612&w=0&k=20&c=KlFm163OgQ6ShCBaKp6uyWzc73ObI6FonmAWzD9Z-P4=" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Rénovation</span>
+    <h3 class="article-title">Quelles rénovations apportent le meilleur retour sur investissement ?</h3>
+    <p class="article-text">Classement des travaux les plus rentables : énergétique, cuisine, salle de bain, aménagements.</p>
+  </div>
+</a>
+    <!-- ARTICLE 3 -->
+
+
+
+    <a href="Rénovation3.html" class="article-card block">
+  <img src="https://images.pexels.com/photos/158776/euro-money-currency-the-european-158776.jpeg?cs=srgb&dl=argent-argente-billets-de-banque-cash-158776.jpg&fm=jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Rénovation</span>
+    <h3 class="article-title">Aides à la rénovation énergétique : MaPrimeRénov’, CEE, éco-PTZ et TVA réduite</h3>
+    <p class="article-text">Toutes les aides disponibles, montants, conditions, cumul et démarches à suivre.</p>
+  </div>
+</a>
+    </div>
+</section>
+
+
+
+
+<!-- ===================================================== -->
+<!-- =============== 7. PRO DE L'IMMOBILIER =============== -->
+<!-- ===================================================== -->
+
+
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Pro de l'immobilier</h2>
+    <a href="/blog/PrincipalProImmobilier.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+<!-- ARTICLE 1 -->
+
+<a href="Pro2.html" class="article-card block">
+  <img src="https://www.tipasse-immo.fr/resources/mandat_exclusif_agence-immobiliere-tipasse-immo.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Pro</span>
+    <h3 class="article-title">Comment obtenir davantage de mandats exclusifs ?</h3>
+    <p class="article-text">Méthodes modernes, argumentaires, IA, recommandations : les leviers qui fonctionnent vraiment en 2025.</p>
+  </div>
+</a>
+    <!-- ARTICLE 2 -->
+
+
+<a href="Pro3.html" class="article-card block">
+  <img src="https://images.pexels.com/photos/7642000/pexels-photo-7642000.jpeg?cs=srgb&dl=pexels-a-darmel-7642000.jpg&fm=jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Pro</span>
+    <h3 class="article-title">Les obligations des vendeurs que les agents immobiliers doivent connaître</h3>
+    <p class="article-text">Diagnostics, audit énergétique, risques juridiques, sanctions : tout ce qui change en 2025.</p>
+  </div>
+</a>
+    <!-- ARTICLE 3 -->
+
+    <a href="Pro1.html" class="article-card block">
+      <img src="https://cdn.pixabay.com/photo/2017/04/09/12/45/error-2215702_1280.png" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+      <div class="p-4">
+        <span class="cat">Pro</span>
+        <h3 class="article-title">Les erreurs qui font fuir les vendeurs et comment les éviter</h3>
+        <p class="article-text">Manque de suivi, mauvaise estimation, communication faible : comment devenir un agent incontournable.</p>
+      </div>
+    </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- =============== 8. IMMOBILIER D'ENTREPRISE ========== -->
+<!-- ===================================================== -->
+
+
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Immobilier d'entreprise</h2>
+    <a href="ImmobilierEntreprise.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+<!-- ARTICLE 1 -->
+
+<a href="Entreprise1.html" class="article-card block">
+  <img src="https://www.amso.fr/wp-content/uploads/2018/11/photo-20883424-018.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Entreprise</span>
+    <h3 class="article-title">Locaux commerciaux, bureaux ou entrepôts : comment comparer leur rendement ?</h3>
+    <p class="article-text">Analyse des rentabilités, risques, vacance locative et évolutions post-Covid du marché pro.</p>
+  </div>
+</a>
+    <!-- ARTICLE 2 -->
+
+<a href="Entreprise2.html" class="article-card block">
+  <img src="https://media.istockphoto.com/photos/office-skysraper-in-the-sun-picture-id523875332?k=20&m=523875332&s=612x612&w=0&h=0cWbJezkcWzXvkNrkhpOfLX6t6t5A_9sEGZxAtlR_AM=" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Entreprise</span>
+    <h3 class="article-title">SCPI, foncières, achat direct : quelle stratégie choisir ?</h3>
+    <p class="article-text">Les forces, faiblesses et rendements des trois grandes stratégies d’investissement pro.</p>
+  </div>
+</a>
+    <!-- ARTICLE 3 -->
+
+
+<a href="Entreprise3.html" class="article-card block">
+  <img src="https://media.istockphoto.com/id/1154411652/fr/photo/freelances-travaillant-sur-des-ordinateurs-dans-lespace-de-coworking-moderne.jpg?s=612x612&w=0&k=20&c=Dq1QDUTggLRXZWqMR2ea6IgyGQ7QxuWORUh7GbdLBi4=" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Entreprise</span>
+    <h3 class="article-title">Coworking, bureaux flexibles ou privés : comment choisir ?</h3>
+    <p class="article-text">Coûts, flexibilité, image, productivité : comparatif complet pour entreprises et indépendants.</p>
+  </div>
+</a>
+    </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- =============== 9. IA DANS L'IMMOBILIER ============== -->
+<!-- ===================================================== -->
+
+
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">L'IA dans l'immobilier</h2>
+    <a href="IA.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+<!-- ARTICLE 1 -->
+
+<a href="IA1.html" class="article-card block">
+  <img src="https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?w=1200&q=80" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">IA</span>
+    <h3 class="article-title">Peut-on utiliser l’IA pour améliorer la visibilité de son annonce ?</h3>
+    <p class="article-text">Titres optimisés, SEO, photos IA et boost d'audience : comment l’IA peut multiplier vos contacts.</p>
+  </div>
+</a>
+    <!-- ARTICLE 2 -->
+
+
+<a href="IA2.html" class="article-card block">
+  <img src="https://img.freepik.com/photos-premium/image-numerique-bleue-mots-data-bas_662214-21760.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">IA</span>
+    <h3 class="article-title">Photos IA, retouches et home staging virtuel : ce qu’il faut savoir</h3>
+    <p class="article-text">Les limites juridiques, mentions obligatoires et bonnes pratiques pour éviter les sanctions.</p>
+  </div>
+</a>
+    <!-- ARTICLE 3 -->
+
+
+<a href="IA3.html" class="article-card block">
+  <img src="https://img.freepik.com/premium-photo/business-handshake-robot-human-partners_688350-4507.jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">IA</span>
+    <h3 class="article-title">IA vs agent immobilier : complémentarité ou concurrence ?</h3>
+    <p class="article-text">Ce que l’IA automatise, ce que l’humain apporte encore, et comment combiner les deux.</p>
+  </div>
+</a>
+    </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- =============== 10. DÉMÉNAGEMENT ==================== -->
+<!-- ===================================================== -->
+
+
+<section class="py-12">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-[28px] font-bold text-[#2b1b1b]">Déménagement</h2>
+    <a href="Déménagement.html" 
+   class="text-[#7A1E1E] font-semibold hover:underline">
+   Voir tous les articles →
+</a>
+
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+<!-- ARTICLE 1 -->
+
+
+<a href="Déménagement1.html" class="article-card block">
+  <img src="https://images.pexels.com/photos/4553182/pexels-photo-4553182.jpeg?cs=srgb&dl=pexels-cottonbro-4553182.jpg&fm=jpg" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Déménagement</span>
+    <h3 class="article-title">Comment organiser un déménagement étape par étape</h3>
+    <p class="article-text">Checklist, planning, cartons, démarches administratives : tout pour réussir son déménagement.</p>
+  </div>
+</a>
+    <!-- ARTICLE 2 -->
+
+<a href="Déménagement2.html" class="article-card block">
+  <img src="https://media.istockphoto.com/id/928084870/fr/photo/gros-plan-de-deux-livreurs-transportant-la-bo%C3%AEte-en-carton.jpg?s=612x612&w=0&k=20&c=psHOMWt9rkjq7MWKmFnzrMmL-wsBPrAnihS27vyu400=" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Déménagement</span>
+    <h3 class="article-title">Déménager seul ou avec des professionnels : comment choisir ?</h3>
+    <p class="article-text">Coûts, risques, temps, efficacité : comparatif complet pour faire le meilleur choix.</p>
+  </div>
+</a>
+    <!-- ARTICLE 3 -->
+     <a href="Déménagement3.html" class="article-card block">
+  <img src="https://www.fcpe62.org/wp-content/uploads/2013/02/63241_249_aides-financieres.png" alt="Article immobilier Flatway" width="1200" height="800" loading="lazy" decoding="async" class="article-img">
+  <div class="p-4">
+    <span class="cat">Déménagement</span>
+    <h3 class="article-title">Aides financières au déménagement : qui peut en bénéficier ?</h3>
+    <p class="article-text">CAF, Mobili-Pass, aides employeur, région : toutes les aides expliquées simplement.</p>
+  </div>
+</a>
+    </div>
+</section>
+
+
+</div>
+
+
+
+
+  </main>
+
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Immobilier d’entreprise — Tous les articles | Flatway Blog</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background:#faf7f5;
+      font-family: "Inter", sans-serif;
+    }
+
+    .article-card {
+      background:white;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.05);
+      box-shadow:0 8px 18px rgba(0,0,0,0.05);
+      transition:.25s;
+      display:block;
+    }
+    .article-card:hover {
+      transform:translateY(-4px);
+      box-shadow:0 14px 30px rgba(0,0,0,0.08);
+    }
+    .article-img {
+      width:100%;
+      height:190px;
+      object-fit:cover;
+    }
+    .cat {
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:0.12em;
+      color:#7A1E1E;
+      font-weight:600;
+      margin-bottom:4px;
+      display:block;
+    }
+    .article-title {
+      font-size:18px;
+      font-weight:600;
+      color:#2b1b1b;
+      margin-bottom:6px;
+    }
+    .article-text {
+      font-size:14px;
+      opacity:0.85;
+      line-height:1.55;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER SIMPLE -->
+<header class="bg-white border-b border-black/5 sticky top-0 z-30">
+  <div class="max-w-[1240px] mx-auto px-5 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2.5">
+      <div class="w-8 h-8 rounded-lg bg-[#7A1E1E] flex items-center justify-center text-white font-bold text-[20px]">F</div>
+      <div class="font-bold text-[18px] tracking-[0.02em] text-[#111]">Flatway</div>
+    </div>
+    <a href="/blog" class="text-[#7A1E1E] font-medium hover:underline text-[15px]">
+      ← Retour au blog
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="text-white py-16 px-5"
+style="background: radial-gradient(circle at top left, #a23a3a 0, #7A1E1E 40%, #4a1111 90%);">
+  <div class="max-w-[1240px] mx-auto">
+    <h1 class="text-[38px] font-bold mb-3">Immobilier d’entreprise et investissement professionnel</h1>
+    <p class="max-w-[620px] text-[17px] opacity-90">
+      Découvrez nos guides consacrés à l’immobilier d’entreprise, à l’investissement professionnel, aux bureaux, aux locaux commerciaux, aux entrepôts logistiques et aux différentes stratégies permettant de développer ou diversifier un patrimoine immobilier professionnel.
+    </p>
+  </div>
+</section>
+
+<!-- CONTENU -->
+<main class="max-w-[1240px] mx-auto px-5 py-14">
+
+  <h2 class="text-[26px] font-bold text-[#2b1b1b] mb-8">
+    Tous les guides sur <span class="text-[#7A1E1E]">l’immobilier d’entreprise</span>
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+
+    <!-- ARTICLE 1 -->
+    <a href="file:///C:/Users/danie/Downloads/Entreprise1.html" class="article-card">
+      <img src="https://www.amso.fr/wp-content/uploads/2018/11/photo-20883424-018.jpg" class="article-img">
+      <div class="p-4">
+        <span class="cat">Entreprise</span>
+        <h3 class="article-title">Locaux commerciaux, bureaux ou entrepôts : quel type d’actif offre le meilleur rendement ?</h3>
+        <p class="article-text">
+          Comprendre les différences de risque et de rentabilité entre les principaux actifs immobiliers professionnels.
+        </p>
+      </div>
+    </a>
+
+    <!-- ARTICLE 2 -->
+    <a href="file:///C:/Users/danie/Downloads/Entreprise2.html" class="article-card">
+      <img src="https://media.istockphoto.com/photos/office-skysraper-in-the-sun-picture-id523875332?k=20&m=523875332&s=612x612&w=0&h=0cWbJezkcWzXvkNrkhpOfLX6t6t5A_9sEGZxAtlR_AM=" class="article-img">
+      <div class="p-4">
+        <span class="cat">Entreprise</span>
+        <h3 class="article-title">SCPI, foncières ou achat direct : quelle stratégie choisir pour investir ?</h3>
+        <p class="article-text">
+          Comprendre les avantages et les limites des principales stratégies d’investissement immobilier.
+        </p>
+      </div>
+    </a>
+
+    <!-- ARTICLE 3 -->
+    <a href="file:///C:/Users/danie/Downloads/Entreprise3.html" class="article-card">
+      <img src="https://media.istockphoto.com/id/1154411652/fr/photo/freelances-travaillant-sur-des-ordinateurs-dans-lespace-de-coworking-moderne.jpg?s=612x612&w=0&k=20&c=Dq1QDUTggLRXZWqMR2ea6IgyGQ7QxuWORUh7GbdLBi4=" class="article-img">
+      <div class="p-4">
+        <span class="cat">Entreprise</span>
+        <h3 class="article-title">Coworking, bureaux flexibles ou bureaux privés : que choisir ?</h3>
+        <p class="article-text">
+          Comprendre les avantages et les limites des différents espaces de travail professionnels.
+        </p>
+      </div>
+    </a>
+
+  </div>
+
+</main>
+
+</body>
+</html>
