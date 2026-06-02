@@ -57,7 +57,77 @@
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
-  </style>
+  
+.blog-search-container{
+max-width:950px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:12px;
+background:#fff;
+border:3px solid #7A1E1E !important;
+border-radius:24px;
+padding:14px 16px;
+}
+
+.blog-search-input{
+flex:1;
+border:none !important;
+outline:none;
+font-size:17px;
+background:transparent;
+}
+
+.blog-search-btn{
+width:56px;
+height:56px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:transparent;
+border:none;
+color:#7A1E1E;
+cursor:pointer;
+}
+
+.blog-search-btn:hover{
+background:#faf7f5;
+border-radius:14px;
+}
+
+
+.blog-search-wrap{max-width:1150px;margin:auto;}
+.blog-search-container{
+background:#fff;
+border:3px solid #8d2020;
+border-radius:28px;
+padding:18px 26px;
+display:flex;
+align-items:center;
+gap:16px;
+}
+.blog-search-input{
+flex:1;
+border:none!important;
+outline:none;
+background:transparent;
+font-size:20px;
+color:#4b5563;
+}
+.blog-search-input::placeholder{color:#9ca3af;}
+.blog-search-btn{
+width:58px;
+height:58px;
+display:flex;
+align-items:center;
+justify-content:center;
+border:none;
+background:transparent;
+color:#8d2020;
+cursor:pointer;
+}
+
+</style>
 </head>
 
 <body class="bg-[#faf7f5] text-[#1a1a1a]">
@@ -149,34 +219,57 @@
 
     <!-- Intro -->
     <section class="max-w-[800px] mx-auto mb-[60px] text-center">
-      <h2 class="text-[26px] text-[#2b1b1b] mb-[10px] font-bold">
-        Votre centre de ressources pour réussir tous vos projets immobiliers
-      </h2>
-      <p class="text-[16px] opacity-90 leading-[1.7]">
-        Découvrez des guides complets, pratiques et accessibles, pensés pour les particuliers, les agences et les professionnels.<br />
-        Achat, location, vente, estimation, financement, rénovation, déménagement, immobilier d’entreprise ou nouvelles technologies : chaque article vous apporte des conseils concrets.
-      </p>
+      
     </section>
 
     </section>
 
-<section class="max-w-[900px] mx-auto px-5 relative z-20 -mt-8 mb-10">
-  <div class="bg-white rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.08)] border border-black/5 p-3 relative">
+<section class="max-w-[850px] mx-auto px-5 relative z-20 -mt-6 mb-10">
 
-    <input
-      type="text"
-      id="blogSearch"
-      placeholder="Rechercher un article, une catégorie ou un sujet..."
-      class="w-full px-5 py-4 text-[16px] outline-none rounded-xl"
-      autocomplete="off"
-    >
+  <div class="relative bg-white border-[2px] border-[#8D2020] rounded-[18px] px-5 py-4">
+
+    <div class="flex items-center">
+
+      <input
+        type="text"
+        id="blogSearch"
+        placeholder="Rechercher un article, une catégorie ou un sujet..."
+        autocomplete="off"
+        class="flex-1 bg-transparent outline-none border-none text-[15px] text-[#4B5563] placeholder:text-[#9CA3AF]"
+      >
+
+      <button
+        type="button"
+        aria-label="Rechercher"
+        class="ml-4 text-[#8D2020] shrink-0">
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.9"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="M20 20L16.65 16.65"></path>
+
+        </svg>
+
+      </button>
+
+    </div>
 
     <div
       id="searchResults"
-      class="hidden absolute left-0 right-0 top-full mt-2 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden z-50">
+      class="hidden absolute left-0 right-0 top-full mt-3 bg-white rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.12)] border border-black/5 overflow-hidden z-50">
     </div>
 
   </div>
+
 </section>
 
   <!-- CONTENU -->
@@ -189,7 +282,77 @@
       .cat { font-size:12px; text-transform:uppercase; letter-spacing:0.12em; color:#7A1E1E; font-weight:600; margin-bottom:4px; display:block; }
       .article-title { font-size:18px; font-weight:600; color:#2b1b1b; margin-bottom:6px; }
       .article-text { font-size:14px; opacity:0.85; line-height:1.55; }
-    </style>
+    
+.blog-search-container{
+max-width:950px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:12px;
+background:#fff;
+border:3px solid #7A1E1E !important;
+border-radius:24px;
+padding:14px 16px;
+}
+
+.blog-search-input{
+flex:1;
+border:none !important;
+outline:none;
+font-size:17px;
+background:transparent;
+}
+
+.blog-search-btn{
+width:56px;
+height:56px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:transparent;
+border:none;
+color:#7A1E1E;
+cursor:pointer;
+}
+
+.blog-search-btn:hover{
+background:#faf7f5;
+border-radius:14px;
+}
+
+
+.blog-search-wrap{max-width:1150px;margin:auto;}
+.blog-search-container{
+background:#fff;
+border:3px solid #8d2020;
+border-radius:28px;
+padding:18px 26px;
+display:flex;
+align-items:center;
+gap:16px;
+}
+.blog-search-input{
+flex:1;
+border:none!important;
+outline:none;
+background:transparent;
+font-size:20px;
+color:#4b5563;
+}
+.blog-search-input::placeholder{color:#9ca3af;}
+.blog-search-btn{
+width:58px;
+height:58px;
+display:flex;
+align-items:center;
+justify-content:center;
+border:none;
+background:transparent;
+color:#8d2020;
+cursor:pointer;
+}
+
+</style>
 
 
    <!-- ===================================================== -->
