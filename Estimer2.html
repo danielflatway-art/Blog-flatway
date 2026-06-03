@@ -67,97 +67,136 @@
   </style>
 </head>
 
-<body class="m-0 bg-[#faf7f5] text-[#1a1a1a]">
+<body class="m-0 bg-white text-[#1a1a1a] pt-[70px]">
 
   <!-- NAV / HEADER -->
-  <header class="sticky top-0 z-30 bg-white border-b border-black/5">
-    <div class="max-w-[1240px] mx-auto px-5 py-[14px] flex items-center justify-between gap-5">
+  
+<header class="fixed top-0 left-0 w-full z-30 bg-white shadow">
+<div class="h-[70px] w-full flex justify-between items-center px-[30px] gap-10">
+<a href="https://flatway.fr/" aria-label="Retour à l'accueil">
+<img src="https://flatway.fr/_next/static/media/appIcon.4beb43c9.webp" alt="logo navbar" width="48" height="48">
+</a>
+<div class="hidden sm:flex w-full px-[10px]">
+<a href="https://flatway.fr/estimation" rel="nofollow" class="text-[#980000] px-2 py-2 rounded-lg text-md font-medium hover:bg-gray-100">Estimer</a>
+<a href="https://flatway.fr/consultation?searchAreaId=paris-75001-75056&propertyTypes=1,2" rel="nofollow" class="text-[#980000] px-2 py-2 rounded-lg text-md font-medium hover:bg-gray-100">Acheter</a>
+<a href="https://flatway.fr/comment-vendre" rel="nofollow" class="text-[#980000] px-2 py-2 rounded-lg text-md font-medium hover:bg-gray-100">Vendre</a>
+</div>
+<a href="https://flatway.fr/login/professionnel" class="flex items-center gap-2 whitespace-nowrap border border-gray-200 px-4 py-2 rounded-md hover:bg-gray-50">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+</svg>
+Se connecter
+</a>
+</div>
+</header>
 
-      <!-- Logo -->
-      <div class="flex items-center gap-2.5">
-        <div class="w-8 h-8 rounded-lg bg-[#7A1E1E] flex items-center justify-center text-white font-bold text-[20px]">
-          F
-        </div>
-        <div class="font-bold text-[18px] tracking-[0.02em] text-[#111111]">
-          Flatway
-        </div>
-      </div>
 
-      <!-- Nav -->
-      <nav class="hidden md:flex items-center gap-[26px] text-[15px]">
-        <a href="https://flatway.fr/estimer" class="text-[#333333] font-medium hover:underline">Estimer</a>
-        <a href="https://flatway.fr/acheter" class="text-[#333333] font-medium hover:underline">Acheter</a>
-        <a href="https://flatway.fr/vendre" class="text-[#333333] font-medium hover:underline">Vendre</a>
-        <a href="https://flatway.fr/blog"
-           class="relative text-[#7A1E1E] font-medium after:content-[''] after:absolute after:left-0 after:-bottom-[6px] after:h-[2px] after:w-full after:rounded-full after:bg-[#7A1E1E]">
-          Blog
-        </a>
-      </nav>
-
-      <!-- CTA -->
-      <div class="flex items-center gap-3 text-[14px]">
-        <button class="rounded-full border border-[#dddddd] px-4 py-[7px] bg-white cursor-pointer text-sm">
-          Vous êtes professionnel ?
-        </button>
-        <button class="rounded-full border-none px-[18px] py-2 bg-[#7A1E1E] text-white cursor-pointer text-sm shadow-[0_4px_12px_rgba(122,30,30,0.35)] hover:bg-[#980000]">
-          Découvrir Flatway
-        </button>
-      </div>
-    </div>
-  </header>
-
+  
   <!-- HERO ARTICLE -->
-  <section class="relative overflow-hidden text-white px-5 pt-[46px] pb-[52px] bg-[radial-gradient(circle_at_top_left,#a23a3a_0,#7A1E1E_40%,#4a1111_90%)]">
-    <!-- Overlay -->
-    <div class="pointer-events-none absolute inset-0 opacity-[0.16] mix-blend-soft-light bg-[url('https://flatway.fr/static/images/hero-overlay.jpg')] bg-cover bg-center"></div>
-
-    <div class="relative max-w-[1240px] mx-auto">
-      <!-- Breadcrumb -->
-      <div class="text-[13px] mb-3 opacity-90">
-        <a href="https://flatway.fr/blog" class="text-[#ffecec] font-medium hover:underline">Blog</a>
-        <span class="mx-1">›</span>
-        <span>Prix immobilier</span>
+  <section class="bg-white px-5 pt-[42px] pb-[24px]">
+    <div class="max-w-[760px] mx-auto">
+      <div class="text-[13px] text-gray-500 mb-4">
+        Blog › Prix immobilier
       </div>
 
-      <!-- Labels -->
-      <div class="inline-flex items-center gap-2 rounded-full px-3 py-1 border border-white/20 bg-white/10 text-[11px] uppercase tracking-[0.12em] mb-2">
-        <span>Prix</span>
-        <span>Marché 2026</span>
+      <div class="inline-flex items-center gap-2 rounded-full px-3 py-1 bg-[#f6f1ef] text-[#7A1E1E] text-[11px] uppercase tracking-[0.12em] mb-4">
+        Prix immobilier
       </div>
 
-      <!-- Title -->
-      <h1 class="text-[32px] leading-[1.18] font-bold mt-0 mb-2 flex flex-wrap items-center gap-2">
-        Qu’est-ce qui fait varier
-        <span class="whitespace-nowrap">le prix d’un bien immobilier&nbsp;?</span>
+      <h1 class="text-[42px] leading-[1.15] font-bold text-[#111] mb-5">
+        Qu’est-ce qui fait varier le prix d’un bien immobilier ?
       </h1>
 
-      <!-- Meta -->
-      <div class="flex flex-wrap items-center gap-2 mt-1 text-[13px] opacity-90">
-        <span>Temps de lecture : ~5 minutes</span>
-        <span class="px-[9px] py-[3px] rounded-full bg-black/30 text-[11px] uppercase tracking-[0.08em]">
-          Prix • Estimation • Marché
-        </span>
+      <p class="text-[20px] leading-[1.7] text-[#555] mb-6">
+        Deux biens situés dans le même secteur peuvent afficher des écarts de prix importants.
+        Localisation, état général, performance énergétique, environnement ou dynamique du marché :
+        découvrez les principaux facteurs qui influencent réellement la valeur d’un bien immobilier.
+      </p>
+
+      <div class="flex items-center gap-3 text-[14px] text-gray-600 mb-8">
+        <img src="https://flatway.fr/_next/static/media/appIcon.4beb43c9.webp" class="w-10 h-10 rounded-lg">
+        <div>
+          <div class="font-medium text-[#111]">Rédaction Flatway</div>
+          <div>Temps de lecture : 7 min</div>
+        </div>
       </div>
+
+      <div class="relative">
+      <img
+        src="https://media.istockphoto.com/id/1265019602/vector/growth-and-moving-down-arrows.jpg?s=612x612&w=0&k=20&c=5biVAQslUKIs572rXaADyReQD6wzOjOWly5IFvm7nrU="
+        alt="Facteurs influençant le prix immobilier"
+        class="w-full rounded-[20px] object-cover shadow-[0_10px_30px_rgba(0,0,0,0.12)]"
+      >
+
+      
+</div>
+
+<div class="flex justify-end items-center gap-2 mt-3">
+  <span class="text-[15px] text-[#555] mr-2 font-medium">Partager</span>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://danielflatway-art.github.io/Blog-flatway/Estimer1.html" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0022 12z"/></svg>
+  </a>
+
+  <a href="https://twitter.com/intent/tweet?url=https://danielflatway-art.github.io/Blog-flatway/Estimer1.html" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center shadow-sm">
+    <span class="text-[12px] font-bold">X</span>
+  </a>
+
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://danielflatway-art.github.io/Blog-flatway/Estimer1.html" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-[#0077B5] text-white flex items-center justify-center shadow-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.67-1.27 2.3-2.6 4.73-2.6C22 7.6 24 10.1 24 14.1V24h-5v-8.4c0-2-.04-4.5-2.75-4.5-2.76 0-3.18 2.15-3.18 4.36V24h-5V8z"/></svg>
+  </a>
+
+  <button onclick="navigator.clipboard.writeText(window.location.href)" aria-label="Copier le lien" title="Copier le lien" class="w-9 h-9 rounded-full bg-white border border-gray-300 text-[#111] flex items-center justify-center shadow-sm hover:bg-gray-50 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+    </svg>
+  </button>
+</div>
+
     </div>
   </section>
 
   <!-- CONTENU ARTICLE -->
+
   <main class="pt-8 pb-16 px-5 md:pt-6 md:pb-12 md:px-4">
-    <div class="max-w-[900px] mx-auto">
-      <article id="article-variation-prix" class="bg-white rounded-[22px] px-[26px] pt-[26px] pb-[30px] shadow-[0_10px_25px_rgba(0,0,0,0.09)] border border-black/5" itemscope itemtype="https://schema.org/Article">
+    <div class="max-w-[760px] mx-auto">
+      <article id="article-variation-prix" class="bg-white px-0 pt-[10px] pb-[30px]" itemscope itemtype="https://schema.org/Article">
 
         <!-- TITLE -->
-        <h2 class="text-[26px] mt-0 mb-2 text-[#2b1b1b] font-semibold">Pourquoi deux logements similaires peuvent afficher des prix très différents</h2>
+        <h2 class="text-[30px] mt-0 mb-4 text-[#111] font-bold">Pourquoi deux logements similaires peuvent afficher des prix très différents</h2>
 
         <p class="text-sm text-gray-500 mt-1 mb-6">
-          Temps de lecture : 5 minutes • Prix immobilier, estimation, analyse du marché
+          Temps de lecture : 7 minutes • Prix immobilier, marché, estimation
         </p>
 
-        <p class="text-[14px] text-[#777777] -mt-4">
-  Par <strong>Rédaction Flatway</strong> • 2026
-</p>
 
-        <!-- BODY -->
+        
+<div class="bg-[#faf7f5] rounded-[16px] p-6 mb-8 border border-black/5">
+<p class="font-semibold text-[16px] mb-3">À retenir</p>
+<ul class="space-y-2 text-[15px]">
+<li>✓ La valeur d’un bien dépend d’une combinaison de facteurs et non d’un seul critère.</li>
+<li>✓ Localisation, surface et état général expliquent une grande partie des écarts de prix.</li>
+<li>✓ Les caractéristiques comme le DPE, l’extérieur, la luminosité ou le stationnement influencent fortement l’attractivité d’un logement.</li>
+<li>✓ Le marché local, les taux de crédit et le contexte économique peuvent faire évoluer les prix à la hausse comme à la baisse.</li>
+</ul>
+</div>
+
+
+<div class="bg-[#faf7f5] rounded-[16px] p-6 mb-8 border border-black/5">
+<p class="font-semibold text-[18px] mb-4">Sommaire</p>
+<div class="space-y-2 text-[15px]">
+<a href="#trio-base" class="block text-[#7A1E1E] hover:underline">Le trio de base : localisation, surface, état</a>
+<a href="#caracteristiques" class="block text-[#7A1E1E] hover:underline">Les caractéristiques qui font monter ou baisser le prix</a>
+<a href="#copropriete" class="block text-[#7A1E1E] hover:underline">Le rôle de la copropriété et des charges</a>
+<a href="#marche-local" class="block text-[#7A1E1E] hover:underline">Marché local et taux</a>
+<a href="#facteurs" class="block text-[#7A1E1E] hover:underline">Les facteurs souvent sous-estimés</a>
+<a href="#prix-signe" class="block text-[#7A1E1E] hover:underline">Prix affiché vs prix signé</a>
+<a href="#projet" class="block text-[#7A1E1E] hover:underline">Comment utiliser ces facteurs</a>
+</div>
+</div>
+
+<!-- BODY -->
         <div class="max-w-none text-[15px] leading-[1.7] text-[#2b1b1b] space-y-4 mt-3">
 
           <p>
@@ -175,7 +214,7 @@
           </p>
 
           <!-- SECTION 1 -->
-          <h3 class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
+          <h3 id="trio-base" class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
             Le trio de base : localisation, surface, état
           </h3>
 
@@ -211,7 +250,7 @@
           </div>
 
           <!-- SECTION 2 -->
-          <h3 class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
+          <h3 id="caracteristiques" class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
             Les caractéristiques qui font monter (ou baisser) le prix au m²
           </h3>
 
@@ -253,7 +292,7 @@
           
 
           <!-- SECTION 3 -->
-          <h3 class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
+          <h3 id="copropriete" class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
             Le rôle de la copropriété et des charges (pour les appartements)
           </h3>
 
@@ -269,7 +308,7 @@
           </p>
 
           <!-- SECTION 4 -->
-          <h3 class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
+          <h3 id="marche-local" class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
             Marché local, taux, contexte 2026 : ce que vous ne maîtrisez pas mais qui compte
           </h3>
 
@@ -294,7 +333,7 @@
           </div>
 
           <!-- SECTION 5 -->
-          <h3 class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
+          <h3 id="facteurs" class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
             Les facteurs souvent sous-estimés (mais que les acheteurs voient tout de suite)
           </h3>
 
@@ -310,7 +349,7 @@
           </p>
 
           <!-- SECTION 6 -->
-          <h3 class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
+          <h3 id="prix-signe" class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
             Prix affiché vs prix signé : la différence qui change tout
           </h3>
 
@@ -332,7 +371,7 @@
           </p>
 
           <!-- SECTION 7 -->
-          <h3 class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
+          <h3 id="projet" class="text-[20px] mt-[26px] mb-[10px] text-[#7c1616] font-semibold">
             Comment utiliser ces facteurs pour votre propre projet ?
           </h3>
 
@@ -340,11 +379,27 @@
             Selon que vous soyez acheteur ou vendeur, la manière d’utiliser ces informations diffère légèrement.
           </p>
 
-          <h4 class="font-semibold text-neutral-900 mt-3">Vous vendez :</h4>
-
           
+<h4 class="font-semibold text-neutral-900 mt-3">Vous vendez :</h4>
 
-          <h4 class="font-semibold text-neutral-900 mt-3">Vous achetez :</h4>
+<ul class="pl-5 list-disc space-y-1">
+<li>identifiez objectivement les points forts et les points faibles de votre bien,</li>
+<li>comparez votre logement avec des biens réellement similaires dans votre secteur,</li>
+<li>tenez compte des éléments qui valorisent ou pénalisent le prix (DPE, extérieur, étage, travaux),</li>
+<li>fixez un prix cohérent avec le marché pour éviter une mise en vente trop longue.</li>
+</ul>
+
+
+
+<h4 class="font-semibold text-neutral-900 mt-3">Vous achetez :</h4>
+
+<ul class="pl-5 list-disc space-y-1">
+<li>analysez le bien dans son ensemble et pas uniquement son prix affiché,</li>
+<li>évaluez l'impact de la localisation, de l'état général et des charges éventuelles,</li>
+<li>repérez les atouts qui justifient un prix plus élevé ou les défauts permettant une négociation,</li>
+<li>comparez plusieurs biens similaires afin de mieux comprendre les écarts de valeur.</li>
+</ul>
+
 
           
 
@@ -368,14 +423,38 @@
 
         </div>
 
-      </article>
-
+      <br>
       <div class="mt-[18px] max-w-[800px] mx-auto text-[14px] text-left">
         <a href="https://flatway.fr/blog" class="inline-flex items-center gap-1.5 text-[#7A1E1E] font-medium hover:underline">
           <span>←</span>
           <span>Retour au blog Flatway</span>
         </a>
-      </div>
+        </div>
+
+
+<section class="mt-16 border-t border-black/10 pt-10">
+<h2 class="text-[28px] font-bold mb-6 text-[#111]">À lire également</h2>
+<div class="grid md:grid-cols-2 gap-6">
+
+<a href="Estimer1.html" class="block bg-white border border-black/5 rounded-[18px] p-6 shadow-sm hover:shadow-md transition">
+<div class="text-[#7A1E1E] text-sm font-semibold mb-2">ESTIMER</div>
+<h3 class="font-bold text-[20px] mb-2">Comment estimer la valeur de votre maison ou appartement ?</h3>
+<p class="text-[#666] text-[15px]">Comprendre les méthodes utilisées pour évaluer un bien immobilier et les critères qui influencent réellement sa valeur.</p>
+</a>
+
+<a href="Estimer3.html" class="block bg-white border border-black/5 rounded-[18px] p-6 shadow-sm hover:shadow-md transition">
+<div class="text-[#7A1E1E] text-sm font-semibold mb-2">ESTIMER</div>
+<h3 class="font-bold text-[20px] mb-2">Prix au m² : comment le calculer et comment l’interpréter ?</h3>
+<p class="text-[#666] text-[15px]">Comprendre les méthodes utilisées pour évaluer un bien immobilier et les critères qui influencent réellement sa valeur.</p>
+</a>
+
+</div>
+</section>
+
+
+</article>
+
+      
     </div>
   </main>
 
